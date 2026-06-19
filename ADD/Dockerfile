@@ -1,5 +1,4 @@
 FROM almalinux:9
-LABEL author="Srinivas"
 RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 ADD https://github.com/daws-84s/notes/blob/main/demo.txt  /usr/share/nginx/html/index.html
